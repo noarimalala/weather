@@ -1,0 +1,36 @@
+
+<?php
+/** @var \Test\Weather\Block\Search\Weather $block */
+?>
+
+<form class="form" id="custom-form" method="post">
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?php echo __('Ma Météo') ?></span></legend><br>
+        <div class="field">
+            <div class="control <?php echo $block->getSerializedConfig(); ?>">
+                <input class="input-text required-entry" id="city" name="city" type="text" placeholder="<?php  echo __('Ville') ?>">
+            </div>
+            <div class="primary">
+                <button type="button" id="search-btn" class="action primary" title="<?php  echo __('Rechercher') ?>"><span><?php echo __('Rechercher') ?></span></button>
+            </div>
+        </div>
+    </fieldset>
+</form><br/>
+
+<div id="info"></div>
+
+<table>
+    <tr>
+        <th>Jour</th>
+        <th>Température</th>
+        <th>Conditions</th>
+        <th>Vent et direction</th>
+    </tr>
+</table>
+<hr>
+<div id="info"></div>
+
+<script>
+    window.jsConfigData = <?= $block->getSerializedConfig(); ?>;
+</script>
+

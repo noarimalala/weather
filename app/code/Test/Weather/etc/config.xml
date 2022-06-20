@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <search_weather>
+            <general>
+                <weather_api_key>2732ca8f53b64a5eb1f140615221706</weather_api_key>
+            </general>
+        </search_weather>
+    </default>
+</config>

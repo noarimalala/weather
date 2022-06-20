@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="weather_test" translate="label" sortOrder="10">
+            <label>Weather Test</label>
+        </tab>
+        <section id="search_weather" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Hello World</label>
+            <tab>weather_test</tab>
+            <resource>Test_Weather::search_weather_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Weaher API Key</label>
+                <field id="weather_api_key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Key</label>
+                    <comment>Enter here your API Key.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
